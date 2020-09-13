@@ -9,6 +9,14 @@ class AbstractAudit(models.Model):
     """
     An abstract model that manages the modifications made to a model
     """
+    is_active = models.BooleanField(
+        _('active'),
+        default=True,
+        help_text=_(
+            'Designates whether this record should be treated as active. '
+            'Unselect this instead of deleting accounts.'
+        ),
+    )
     creation_date = models.DateTimeField(
         _('creation date'),
         auto_now_add=True,

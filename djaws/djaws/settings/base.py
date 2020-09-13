@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
+    'books.apps.BooksConfig',
 ]
 
 MIDDLEWARE = [
@@ -42,6 +43,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'crum.CurrentRequestUserMiddleware',
 ]
 
 ROOT_URLCONF = 'djaws.urls'
@@ -96,17 +98,23 @@ USE_L10N = True
 
 USE_TZ = True
 
+AUTH_USER_MODEL = 'users.User'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    BASE_DIR / 'static',
+)
+
 MEDIA_URL = '/media/'
 
-AUTH_USER_MODEL = 'users.User'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 LOCALE_PATHS = (
     BASE_DIR.joinpath('locale'),
 )
-
 
 LOG_PATH = BASE_DIR / 'logs'
