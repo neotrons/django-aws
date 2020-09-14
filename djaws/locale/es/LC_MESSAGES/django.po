@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-14 05:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: books/admin.py:25 books/admin.py:43
+msgid "image preview"
+msgstr "vista previa"
+
+#: books/admin.py:39 books/models.py:47 books/models.py:66
+msgid "categories"
+msgstr "categorías"
+
+#: books/admin.py:47 books/models.py:60
+msgid "cover"
+msgstr "portada"
+
+#: books/admin.py:53 books/models.py:61
+msgid "file"
+msgstr "archivo"
+
+#: books/apps.py:7 books/models.py:79
+msgid "books"
+msgstr "libros"
+
+#: books/models.py:11 books/models.py:26 books/models.py:42 books/models.py:57
+msgid "id"
+msgstr "id"
+
+#: books/models.py:12 books/models.py:43
+msgid "description"
+msgstr "descripción"
+
+#: books/models.py:15
+msgid "tag"
+msgstr "etiqueta"
+
+#: books/models.py:16 books/models.py:72
+msgid "tags"
+msgstr "etiquetas"
+
+#: books/models.py:27
+msgid "full name"
+msgstr "nombres"
+
+#: books/models.py:28
+msgid "photo"
+msgstr "foto"
+
+#: books/models.py:31
+msgid "author"
+msgstr "autor"
+
+#: books/models.py:32
+msgid "authors"
+msgstr "autores"
+
+#: books/models.py:46
+msgid "category"
+msgstr "categoría"
+
+#: books/models.py:58
+msgid "title"
+msgstr "titulo"
+
+#: books/models.py:59
+msgid "summary"
+msgstr "resumen"
+
+#: books/models.py:62
+msgid "pages"
+msgstr "páginas"
+
+#: books/models.py:63
+msgid "year"
+msgstr "año"
+
+#: books/models.py:78
+msgid "book"
+msgstr "libro"
+
+#: core/admin.py:40
+msgid "upload an image to show here"
+msgstr ""
+
+#: core/models/models.py:13
+msgid "active"
+msgstr "carga una imagen para mostrar aquí"
+
+#: core/models/models.py:16
+msgid ""
+"Designates whether this record should be treated as active. Unselect this "
+"instead of deleting accounts."
+msgstr "Indica si este registro debe tratarse como activo"
+
+#: core/models/models.py:21
+msgid "creation date"
+msgstr "fecha de creación"
+
+#: core/models/models.py:23
+msgid "record creation date"
+msgstr "fecha de creación del registro"
+
+#: core/models/models.py:26
+msgid "username created"
+msgstr "usuario creador"
+
+#: core/models/models.py:28
+msgid "username that created the record"
+msgstr "usurio que creo el registro"
+
+#: core/models/models.py:31
+msgid "update date"
+msgstr "fecha de actualización"
+
+#: core/models/models.py:33
+msgid "record update date"
+msgstr "fecha de actualización del registro"
+
+#: core/models/models.py:37
+msgid "username updated"
+msgstr "usuario de actualización"
+
+#: core/models/models.py:39
+msgid "username that updated the record"
+msgstr "usuario de actualización del registro"
+
+#: users/apps.py:7 users/models.py:14
+msgid "users"
+msgstr "usurios"
+
+#: users/models.py:13
+msgid "user"
+msgstr "usuario"

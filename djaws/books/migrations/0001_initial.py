@@ -4,7 +4,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -14,11 +13,17 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Author',
             fields=[
-                ('is_active', models.BooleanField(default=True, help_text='Designates whether this record should be treated as active. Unselect this instead of deleting accounts.', verbose_name='active')),
-                ('creation_date', models.DateTimeField(auto_now_add=True, help_text='record creation date', verbose_name='creation date')),
-                ('created_by', models.CharField(help_text='username that created the record', max_length=100, verbose_name='username created')),
-                ('update_date', models.DateTimeField(auto_now=True, help_text='record update date', verbose_name='update date')),
-                ('update_by', models.CharField(help_text='username that updated the record', max_length=100, verbose_name='username updated')),
+                ('is_active', models.BooleanField(default=True,
+                                                  help_text='Designates whether this record should be treated as active. Unselect this instead of deleting accounts.',
+                                                  verbose_name='active')),
+                ('creation_date', models.DateTimeField(auto_now_add=True, help_text='record creation date',
+                                                       verbose_name='creation date')),
+                ('created_by', models.CharField(help_text='username that created the record', max_length=100,
+                                                verbose_name='username created')),
+                ('update_date',
+                 models.DateTimeField(auto_now=True, help_text='record update date', verbose_name='update date')),
+                ('update_by', models.CharField(help_text='username that updated the record', max_length=100,
+                                               verbose_name='username updated')),
                 ('id', models.AutoField(primary_key=True, serialize=False, verbose_name='id')),
                 ('full_name', models.CharField(max_length=150, verbose_name='full name')),
                 ('photo', models.ImageField(upload_to='book/author', verbose_name='photo')),
@@ -31,11 +36,17 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Category',
             fields=[
-                ('is_active', models.BooleanField(default=True, help_text='Designates whether this record should be treated as active. Unselect this instead of deleting accounts.', verbose_name='active')),
-                ('creation_date', models.DateTimeField(auto_now_add=True, help_text='record creation date', verbose_name='creation date')),
-                ('created_by', models.CharField(help_text='username that created the record', max_length=100, verbose_name='username created')),
-                ('update_date', models.DateTimeField(auto_now=True, help_text='record update date', verbose_name='update date')),
-                ('update_by', models.CharField(help_text='username that updated the record', max_length=100, verbose_name='username updated')),
+                ('is_active', models.BooleanField(default=True,
+                                                  help_text='Designates whether this record should be treated as active. Unselect this instead of deleting accounts.',
+                                                  verbose_name='active')),
+                ('creation_date', models.DateTimeField(auto_now_add=True, help_text='record creation date',
+                                                       verbose_name='creation date')),
+                ('created_by', models.CharField(help_text='username that created the record', max_length=100,
+                                                verbose_name='username created')),
+                ('update_date',
+                 models.DateTimeField(auto_now=True, help_text='record update date', verbose_name='update date')),
+                ('update_by', models.CharField(help_text='username that updated the record', max_length=100,
+                                               verbose_name='username updated')),
                 ('id', models.AutoField(primary_key=True, serialize=False, verbose_name='id')),
                 ('description', models.CharField(max_length=100, verbose_name='description')),
             ],
@@ -58,11 +69,17 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Book',
             fields=[
-                ('is_active', models.BooleanField(default=True, help_text='Designates whether this record should be treated as active. Unselect this instead of deleting accounts.', verbose_name='active')),
-                ('creation_date', models.DateTimeField(auto_now_add=True, help_text='record creation date', verbose_name='creation date')),
-                ('created_by', models.CharField(help_text='username that created the record', max_length=100, verbose_name='username created')),
-                ('update_date', models.DateTimeField(auto_now=True, help_text='record update date', verbose_name='update date')),
-                ('update_by', models.CharField(help_text='username that updated the record', max_length=100, verbose_name='username updated')),
+                ('is_active', models.BooleanField(default=True,
+                                                  help_text='Designates whether this record should be treated as active. Unselect this instead of deleting accounts.',
+                                                  verbose_name='active')),
+                ('creation_date', models.DateTimeField(auto_now_add=True, help_text='record creation date',
+                                                       verbose_name='creation date')),
+                ('created_by', models.CharField(help_text='username that created the record', max_length=100,
+                                                verbose_name='username created')),
+                ('update_date',
+                 models.DateTimeField(auto_now=True, help_text='record update date', verbose_name='update date')),
+                ('update_by', models.CharField(help_text='username that updated the record', max_length=100,
+                                               verbose_name='username updated')),
                 ('id', models.AutoField(primary_key=True, serialize=False, verbose_name='id')),
                 ('title', models.CharField(max_length=150, verbose_name='title')),
                 ('summary', models.TextField(max_length=300, verbose_name='summary')),
@@ -70,7 +87,8 @@ class Migration(migrations.Migration):
                 ('file', models.FileField(upload_to='book/book', verbose_name='file')),
                 ('pages', models.PositiveSmallIntegerField(verbose_name='pages')),
                 ('year', models.PositiveSmallIntegerField(verbose_name='year')),
-                ('categories', models.ManyToManyField(blank=True, related_name='categories', to='books.Category', verbose_name='categories')),
+                ('categories', models.ManyToManyField(blank=True, related_name='categories', to='books.Category',
+                                                      verbose_name='categories')),
                 ('tags', models.ManyToManyField(blank=True, related_name='tags', to='books.Tag', verbose_name='tags')),
             ],
             options={
