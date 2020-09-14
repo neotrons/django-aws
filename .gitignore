@@ -74,3 +74,4 @@ target/
 .env
 # Project
 **/settings/local.py
+media/
